@@ -7,6 +7,12 @@ The `my-Tasks` project hast two modules (repositories:
 - `my-Tasks-web` (**this module/ repository**): the frontend project, a so called _Single Page App (SPA)_ build with [Vite and the _react-ts_ template](https://vite.dev/guide/#scaffolding-your-first-vite-project), to be deployed to [Amazong S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
 - [`my-Tasks-api`](https://github.com/pawsaw/my-tasks-api): the _RESTful api_, providing an endpoint for managing tasks (CRUD operations). This module is to be deployed to [AWS Lambda](https://aws.amazon.com/lambda/) with [Amazon API Gateway](https://aws.amazon.com/api-gateway/) in a proxy configuration. The data is stored and managed in [Amazon DynamoDB](https://aws.amazon.com/dynamodb/).
 
+
+
+https://github.com/user-attachments/assets/79740dda-e509-44fb-ad72-4d89ffdeab17
+
+
+
 A live demo version is deployed to: http://my-tickets-web-bucket.s3-website-us-east-1.amazonaws.com/tasks
 
 ## Configuration
