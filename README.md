@@ -53,7 +53,7 @@ AWS Access Key ID [****************QWIX]:
 AWS Secret Access Key [****************yrcD]: 
 Default region name [eu-north-1]: 
 Default output format [None]: 
-````
+```
 
 ### Build the distribution
 
