@@ -1,5 +1,5 @@
-import { Task } from '@my-tasks/my-tasks-dto';
 import { useCallback, useState } from 'react';
+import { Task } from '../types';
 
 export const useTasks = () => {
   const [tasks, setTasks] = useState<Task[] | null>(null);

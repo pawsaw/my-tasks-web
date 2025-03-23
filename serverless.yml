@@ -1,0 +1,33 @@
+service: my-tickets-web
+
+org: psawicki
+
+provider:
+  name: aws
+  runtime: nodejs22.x
+  region: us-east-1
+  environment:
+    VITE_API_BASE_URL: https://5rr3o0vvq1.execute-api.us-east-1.amazonaws.com
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - s3:ListBucket
+            - s3:GetObject
+            - s3:PutObject
+            - s3:DeleteObject
+          Resource:
+            - arn:aws:s3:::my-tickets-web-bucket
+            - arn:aws:s3:::my-tickets-web-bucket/*
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: my-tickets-web-bucket
+    distributionFolder: dist
+    indexDocument: index.html
+    errorDocument: index.html
+    cloudFront: true

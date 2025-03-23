@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { Task } from '@my-tasks/my-tasks-dto';
 import { useNavigate } from 'react-router-dom';
 import { useTasks } from '../../../hooks/useTasks';
+import { Task } from '../../../types';
 
 export const TaskList = () => {
   const navigate = useNavigate();
